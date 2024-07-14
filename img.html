@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+    <div class="full" id="fullImgBox">
+        <img src="https://cdn-ijnhp.nitrocdn.com/pywIAllcUPgoWDXtkiXtBgvTOSromKIg/assets/images/optimized/rev-5794eaa/www.jaypeehotels.com/blog/wp-content/uploads/2020/09/Japanese.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+ 
+    <div class="container">
+       
+        <div class="images">
+  <img src="https://cdn-ijnhp.nitrocdn.com/pywIAllcUPgoWDXtkiXtBgvTOSromKIg/assets/images/optimized/rev-5794eaa/www.jaypeehotels.com/blog/wp-content/uploads/2020/09/Japanese.jpg"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4-1tbfvcbLxrlR5ywbnQexqGyBo_hLxSCg&s"onclick="openImage(this.src)">
+  <img src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1daa9086-0f1d-4d65-86b5-4a15a36d08d4/traditional-food-around-the-world-Travlinmad.jpg" onclick="openImage(this.src)">
+  <img src="https://static.toiimg.com/photo/88954255.cms"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1uFhVkKKdlgH0PNhtmee8BpmFk9OKREa-A&s" onclick="openImage(this.src)">
+  <img src="https://www.clubmahindra.com/blog/media/section_images/traditiona-795df276e0f7f60.jpg" onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS39eWuJ7s0xn-GSY9mf-CCuVs3vaEYJ9t2MA&s"  onclick="openImage(this.src)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5MDZ9zNHNS-8odn7oF7SdbjhzES908GLug&s" onclick="openImage(this.src)">
+   
+ </div>
+           
+        </div>
+    </div>
+    <script>
+          var fullImgBox = document.getElementById("fullImgBox");
+          var fullImg = document.getElementById("fullImg");
+          function openImage(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+          }
+          function closeFullImg(){
+            fullImgBox.style.display = "none";
+          }
+    </script>
+</body>
+</html>
